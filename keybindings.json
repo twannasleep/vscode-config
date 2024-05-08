@@ -1,0 +1,145 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "shift+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  // NAVIGATION
+  {
+    "key": "ctrl+shift+a",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  // FILE TREE
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+e",
+    "when": "!editorTextFocus"
+  },
+  {
+    "command": "workbench.action.focusActiveEditorGroup",
+    "key": "ctrl+e",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+e",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "deleteFile",
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // EXTRA
+  {
+    "key": "ctrl+shift+5",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+cmd+v",
+    "command": "toggleVim"
+  },
+  {
+    "key": "cmd+s",
+    "command": "workbench.action.files.saveFiles"
+  },
+  {
+    "key": "cmd+s",
+    "command": "workbench.action.files.saveAll"
+  },
+  {
+    "key": "h",
+    "command": "editor.action.scrollLeftHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "j",
+    "command": "editor.action.scrollDownHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "k",
+    "command": "editor.action.scrollUpHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "l",
+    "command": "editor.action.scrollRightHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "space e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "f",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "y",
+    "command": "filesExplorer.copy",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  }
+]
