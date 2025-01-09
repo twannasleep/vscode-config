@@ -193,5 +193,31 @@
     "key": "space f",
     "command": "editor.action.formatDocument",
     "when": "vim.mode == 'Normal' && editorTextFocus"
+  },
+  {
+    "key": "cmd-j",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "cmd-a",
+    "command": "workbench.action.terminal.new",
+    "when": "terminal.active && terminalFocus"
+  },
+  {
+    "key": "cmd-k",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminal.active && terminalFocus"
+  }
+  ,
+  {
+    "key": "cmd-]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminal.active && terminalFocus"
+  },
+  {
+    "key": "cmd-[", 
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminal.active && terminalFocus"
   }
 ]
