@@ -1,5 +1,4 @@
 {
-  "workbench.activityBar.location": "default",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -12,74 +11,88 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "breadcrumbs.enabled": false,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.cursorSurroundingLines": 8,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontSize": 14,
-  "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "modifications",
-  "editor.lineHeight": 2,
-  "editor.lineNumbers": "relative",
-  "editor.linkedEditing": true,
-  "editor.suggest.insertMode": "replace",
-  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
-  "git-autoconfig.configList": [
+  "atlascode.bitbucket.enabled": false,
+  "atlascode.jira.enabled": true,
+  "atlascode.jira.jqlList": [
     {
-      "user.email": "kuintwan@gmail.com",
-      "user.name": "Twannafly"
-    },
-    {
-      "user.email": "tuanbt209@gmail.com",
-      "user.name": "Tuanpep"
+      "enabled": true,
+      "id": "103b6745-9f57-45b3-8a73-3e0e1f1a1911",
+      "monitor": true,
+      "name": "My unichlabs Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "f3748fee-4a46-46d8-bc9a-26c74235fd40"
     }
   ],
-  "git.confirmSync": false,
-  "git.suggestSmartCommit": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "update.showReleaseNotes": false,
-  "vim.hlsearch": true,
-  "vim.highlightedyank.color": "#a9dc7660",
-  "vim.highlightedyank.duration": 250,
-  "vim.highlightedyank.enable": true,
-  "vim.leader": "<Space>",
-  "vim.useSystemClipboard": true,
-  "workbench.colorTheme": "GitHub Dark Default",
-  "workbench.iconTheme": "material-icon-theme",
-  "zenMode.hideLineNumbers": false,
-  "diffEditor.maxComputationTime": 0,
-  "code-runner.fileDirectoryAsCwd": true,
-  "code-runner.ignoreSelection": true,
-  "files.autoSave": "afterDelay",
-  "files.autoSaveWhenNoErrors": true,
-  "files.autoSaveWorkspaceFilesOnly": true,
-  "yaml.schemas": {
-    "file:///Users/twan/.cursor/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-  "editor.wordWrapColumn": 120,
-  "window.commandCenter": false,
-  "explorer.confirmDelete": false,
+  "breadcrumbs.enabled": false,
   "cursor.cpp.disabledLanguages": [
     "plaintext",
     "markdown",
     "scminput",
     "rust"
   ],
-  "terminal.integrated.defaultProfile.osx": "zsh",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.maxComputationTime": 0,
+  "editor.accessibilitySupport": "off",
+  "editor.cursorSurroundingLines": 8,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.lineHeight": 1.8,
+  "editor.lineNumbers": "relative",
+  "editor.linkedEditing": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.wordWrapColumn": 120,
+  "explorer.confirmDelete": false,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveWhenNoErrors": true,
+  "files.autoSaveWorkspaceFilesOnly": true,
+  "git-autoconfig.configList": [
+    {
+      "user.email": "tuanbt209@gmail.com",
+      "user.name": "Tuanpep"
+    },
+    {
+      "user.email": "tuanbt@unich.com",
+      "user.name": "tuanbt"
+    }
+  ],
+  "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "always",
-  "leetcode.workspaceFolder": "/Users/twan/.leetcode",
-  "leetcode.defaultLanguage": "javascript",
-  "leetcode.hint.configWebviewMarkdown": false,
-  "leetcode.hint.commentDescription": false
+  "git.suggestSmartCommit": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "update.showReleaseNotes": false,
+  "vim.highlightedyank.color": "#a9dc7660",
+  "vim.highlightedyank.duration": 250,
+  "vim.highlightedyank.enable": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<Space>",
+  "vim.useSystemClipboard": true,
+  "vim.handleKeys": {
+    "<space>": false
+  },
+  "window.commandCenter": false,
+  "workbench.activityBar.location": "default",
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.iconTheme": "material-icon-theme",
+  "zenMode.hideLineNumbers": false,
+  "terminal.integrated.env.osx": {
+    "Q_NEW_SESSION": "1"
+  },
+  "yaml.schemas": {
+    "file:///Users/unichdonki/.cursor/extensions/atlassian.atlascode-3.2.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  }
 }
